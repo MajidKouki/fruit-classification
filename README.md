@@ -50,6 +50,29 @@ Due to GitHub filesize limitations, the saved model is stored on Google Drive an
 
 ## Analysis
 
+#### Overview of the model:
+
+<img src="./imgs/cnn1.jpeg" alt="Voila Web App" width="500" height="300">
+
+Model has 
+
+#### Results of first model training using augmented Kaggle dataset:
+
+<img src="./imgs/cnn2.jpeg" alt="Voila Web App" width="1400" height="50">
+
+
+<img src="./imgs/cnn3.jpeg" alt="Voila Web App" width="1400" height="50">
+
+
+<img src="./imgs/cnn4.jpeg" alt="Voila Web App" width="1400" height="100">
+
+
+<img src="./imgs/cnn5.jpeg" alt="Voila Web App" width="500" height="500">
+<img src="./imgs/cnn6.jpeg" alt="Voila Web App" width="500" height="500">
+<img src="./imgs/cnn7.jpeg" alt="Voila Web App" width="500" height="500">
+
+
+
 
 
 ---
