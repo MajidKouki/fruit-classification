@@ -44,36 +44,46 @@ Due to GitHub filesize limitations, the saved model is stored on Google Drive an
 
 ## Usage
 
+This project is primarily intended for analysis and model creation. The project can be modified to accommodate new data and be used to train a different model. The ideal usage of this project is to download and use the model for testing with new images that fit the classification it's built for or to use the model elsewhere. 
 
 
 ---
 
 ## Analysis
 
-#### Overview of the model:
+### Overview of the model:
 
 <img src="./imgs/cnn1.jpeg" alt="Voila Web App" width="500" height="300">
 
-Model has 
+Model has 14,714,688 parameters from VGG16 that are frozen until the fine-tuning stage. 3,078 parameters are added to the VGG16 model to train it for this particular classification problem. The output layer is set to 6 for the 6 objects the model will classify (fresh apples, bananas, oranges and rotten apples, bananas, and oranges).
 
-#### Results of first model training using augmented Kaggle dataset:
+--- 
 
-<img src="./imgs/cnn2.jpeg" alt="Voila Web App" width="1400" height="50">
+### Results of first model training using augmented Kaggle dataset:
 
+<img src="./imgs/cnn2.jpeg" alt="Training Round 1" width="1000" height="40">
 
-<img src="./imgs/cnn3.jpeg" alt="Voila Web App" width="1400" height="50">
+The model reached 99% accuracy with training data and 98.3% accuracy with testing data and minimal loss all around. These numbers are good, but not good enough which leads to the next stage: fine-tuning. The base VGG16 model is unfrozen and set to a very low learning rate (.00001) in order to further increase accuracy and decrease loss.
 
+---
 
-<img src="./imgs/cnn4.jpeg" alt="Voila Web App" width="1400" height="100">
+### Results of second model training using fine-tuned model and augmented Kaggle dataset:
 
+<img src="./imgs/cnn3.jpeg" alt="Training Round 2" width="1000" height="40">
+
+After fine-tuning, the model reached an accuracy of 99.93% with both training and testing data and a loss below 1% for both.
+
+---
+
+#### Results of model evaluation:
+
+<img src="./imgs/cnn4.jpeg" alt="Evaluation" width="1000" height="80">
+
+Evaluating the model confirms the 99.93% accuracy and loss below 1%. Below are images predicted by the model with their results above. predict_fruit function was defined to easily displau image, predict image with model, and display the prediction in a readable format for the user.
 
 <img src="./imgs/cnn5.jpeg" alt="Voila Web App" width="500" height="500">
 <img src="./imgs/cnn6.jpeg" alt="Voila Web App" width="500" height="500">
 <img src="./imgs/cnn7.jpeg" alt="Voila Web App" width="500" height="500">
-
-
-
-
 
 ---
 
