@@ -75,15 +75,28 @@ After fine-tuning, the model reached an accuracy of 99.93% with both training an
 
 ---
 
-#### Results of model evaluation:
+### Results of model evaluation:
 
 <img src="./imgs/cnn4.jpeg" alt="Evaluation" width="1000" height="80">
 
 Evaluating the model confirms the 99.93% accuracy and loss below 1%. Below are images predicted by the model with their results above. predict_fruit function was defined to easily displau image, predict image with model, and display the prediction in a readable format for the user.
 
-<img src="./imgs/cnn5.jpeg" alt="Voila Web App" width="500" height="500">
-<img src="./imgs/cnn6.jpeg" alt="Voila Web App" width="500" height="500">
-<img src="./imgs/cnn7.jpeg" alt="Voila Web App" width="500" height="500">
+<img src="./imgs/cnn5.jpeg" alt="Voila Web App" width="400" height="400">
+<img src="./imgs/cnn6.jpeg" alt="Voila Web App" width="400" height="400">
+<img src="./imgs/cnn7.jpeg" alt="Voila Web App" width="400" height="400">
+
+Model was tested on additional images found on [Pixabay](https://pixabay.com/) to evaluate accuracy with results shown below.
+
+
+<img src="./imgs/cnn8.jpeg" alt="Voila Web App" width="500" height="400">
+<img src="./imgs/cnn9.jpeg" alt="Voila Web App" width="500" height="400">
+<img src="./imgs/cnn10.jpeg" alt="Voila Web App" width="500" height="400">
+
+
+
+### Next steps:
+
+The ideal next steps to further develop this model would likely be a more diverse dataset as well as modifications to the layers, particularly the output. The goal of this would be to 1. Provide enough data to allow classification of more than 6 categories (more fruits and more variations) and 2. Train the model to identify fruit with more diverse images that have multiple fruits, complex backgrounds, and more. This would result in a model capable of identifying more fruit in more scenarios, resulting in a more practically useful model.
 
 ---
 
