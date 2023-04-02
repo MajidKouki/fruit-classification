@@ -1,6 +1,6 @@
 # Fruit Classification
 
-Convolutional Neural Network (CNN) that classifies 6 categories of fruit. This model uses transfer learning with the VGG16 model provided by the Keras library and datasets provided by Kaggle. The model classifies apples, bananas, and oranges based on whether they are fresh or rotten. Model is saved and loaded for evaluation without retraining or usage elsewhere.
+Convolutional Neural Network (CNN) that classifies 6 categories of fruit and displays the image alongside the prediction. This model uses transfer learning with the VGG16 model, provided by the Keras library, and data provided by Kaggle and Pixabay. The model classifies apples, bananas, and oranges based on whether they are fresh or rotten. Model is saved and loaded to Google Drive (due to filesize) for evaluation without retraining or usage elsewhere.
 
 ---
 
@@ -14,7 +14,7 @@ This project leverages Python with the following packages:
 
 * [Numpy](https://numpy.org/) - For argmax to assist in model evaluation.
 
-This project also uses datasets from Kaggle.
+This project also uses datasets from [Kaggle](https://www.kaggle.com/) and individual data from [Pixabay](https://pixabay.com/).
 
 ---
 
@@ -34,18 +34,13 @@ Jupyter may be required to view the .ipynb file.
     pip install jupyter
 ```
 
-The Kaggle dataset must also be downloaded and placed in the project directory if the user wishes to retrain the model or evaluate with the images included. The dataset can be directly downloaded from the link in the technologies section or the Kaggle API. The model is saved and loaded for evaluation and can be used to evaluate other images without downloading the dataset.
-
-The Kaggle dataset used can be downloaded [Here](https://www.kaggle.com/datasets/sriramr/fruits-fresh-and-rotten-for-classification).
-
-Due to GitHub filesize limitations, the saved model is stored on Google Drive and can be found [Here](https://drive.google.com/drive/folders/1RMwdAdWB5OKl-tyhW3ujGs-RbhgaNaLp?usp=sharing). To evaluate the model without retraining, download the fruit_cnn file and place it in the repository.
+The Kaggle dataset must also be downloaded and placed in the project directory if the user wishes to retrain the model or evaluate with the images included. The Kaggle dataset used can be downloaded [Here](https://www.kaggle.com/datasets/sriramr/fruits-fresh-and-rotten-for-classification) or via the Kaggle API. The model is saved and loaded in the project and the files for it can be found [Here](https://drive.google.com/drive/folders/1RMwdAdWB5OKl-tyhW3ujGs-RbhgaNaLp?usp=sharing). Model is uploaded seperately due to GitHub filesize limits. Place Kaggle dataset folder and fruit_cnn model folder in project directory to use.
 
 ---
 
 ## Usage
 
 This project is primarily intended for analysis and model creation. The project can be modified to accommodate new data and be used to train a different model. The ideal usage of this project is to download and use the model for testing with new images that fit the classification it's built for or to use the model elsewhere. 
-
 
 ---
 
