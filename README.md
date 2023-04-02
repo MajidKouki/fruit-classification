@@ -55,7 +55,7 @@ This project is primarily intended for analysis and model creation. The project 
 
 <img src="./imgs/cnn1.jpeg" alt="Voila Web App" width="500" height="300">
 
-Model has 14,714,688 parameters from VGG16 that are frozen until the fine-tuning stage. 3,078 parameters are added to the VGG16 model to train it for this particular classification problem. The output layer is set to 6 for the 6 objects the model will classify (fresh apples, bananas, oranges and rotten apples, bananas, and oranges).
+The model has 14,714,688 parameters from VGG16 that are frozen until the fine-tuning stage. 3,078 parameters are added to the VGG16 model to train it for this particular classification problem. The output layer is set to 6 for the 6 objects the model will classify (fresh apples, bananas, oranges and rotten apples, bananas, and oranges).
 
 --- 
 
@@ -79,20 +79,19 @@ After fine-tuning, the model reached an accuracy of 99.93% with both training an
 
 <img src="./imgs/cnn4.jpeg" alt="Evaluation" width="1000" height="80">
 
-Evaluating the model confirms the 99.93% accuracy and loss below 1%. Below are images predicted by the model with their results above. predict_fruit function was defined to easily displau image, predict image with model, and display the prediction in a readable format for the user.
+Evaluating the model confirms the 99.93% accuracy and loss below 1%. Below are images predicted by the model with their results above. predict_fruit function was defined to easily display the image, predict it with model, and then display the prediction in a readable format for the user. Examples of evaluating the testing data are shown below:
 
 <img src="./imgs/cnn5.jpeg" alt="Voila Web App" width="400" height="400">
 <img src="./imgs/cnn6.jpeg" alt="Voila Web App" width="400" height="400">
 <img src="./imgs/cnn7.jpeg" alt="Voila Web App" width="400" height="400">
 
-Model was tested on additional images found on [Pixabay](https://pixabay.com/) to evaluate accuracy with results shown below.
-
+The model was then tested on additional images found on [Pixabay](https://pixabay.com/) to evaluate accuracy with more real world examples. The results shown below:
 
 <img src="./imgs/cnn8.jpeg" alt="Voila Web App" width="500" height="400">
 <img src="./imgs/cnn9.jpeg" alt="Voila Web App" width="500" height="400">
 <img src="./imgs/cnn10.jpeg" alt="Voila Web App" width="500" height="400">
 
-
+---
 
 ### Next steps:
 
